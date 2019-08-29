@@ -68,7 +68,22 @@
             overflow: scroll;
         }
         .list {
+            font-size: 18px;
+            border-bottom: 1px solid rgba(0,0,0,0.5);
             padding: 5px;
+            display: grid;
+            grid-template-columns: 1fr 50px;
+        }
+        .logo {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .version {
+        }
+        .counter {
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .danger {
             background-color: #FF0000;
@@ -82,7 +97,7 @@
 <div id="header">
     <img id="logo" src="assets/logo.png" alt="Chrome Extension Logo" class="logo-icon" />
     <div>
-        <h3 class="logo">Content Controller <span class="version">(1.0.0) testing </span></h3>
+        <h3 class="logo">Content Controller <span class="version"><i>(1.0.0) testing</i></span></h3>
     </div>
 </div>
 <!--<form id="signUpForm">-->

@@ -57,8 +57,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
     const user = window.localStorage.getItem('loggedIn');
 
     if(user) { // logged in? then, save it
-      console.log('logged in!');
-      console.log(user);
       const string = window.localStorage.getItem(user);
       const data = JSON.parse(string);
       data.badWords.push({

@@ -1,4 +1,3 @@
-console.log(window.localStorage.getItem('gg'));
 function populateLoggedInBox() {
   const user = window.localStorage.getItem('loggedIn');
   if(user !== null && user !== undefined && user !== 'null') { // logged in
@@ -17,7 +16,7 @@ function populateLoggedInBox() {
       } else if(counter > 3) {
         counterClass = 'warning';
       }
-      const html = `<div class="list ${counterClass}"><div class='title'><a href="${url}">${title}</a></div><div class="counter_${counter}">${counter}</div><div>${time}</div></div>\n`;
+      const html = `<div class="list ${counterClass}"><div class='title'><a href="${url}">${title}</a></div><div class="counter"><p>${counter}</p></div><div>${time}</div></div>\n`;
       boxStringHTML += html;
     });
 
