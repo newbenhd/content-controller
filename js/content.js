@@ -44,6 +44,8 @@ $(function() {
     title,
     time: timeString
   });
+
+  if(wordCount > 5) {
+    $('body').append("<div id=\"bbbbblock\">\n    <img src=\"https://cdn.shopify.com/s/files/1/1061/1924/products/6_cc0e0b6b-4b8c-4b52-ba5d-e8da39abe776_large.png\" id=\"insideblockme\" />\n</div>\n<style>\n    #bbbbblock {\n        position: absolute;\n        height: 4000px;\n        width: 100%;\n        z-index: 999;\n        background-color: aqua;\n        top: 0;\n        left: 0;\n    }\n    #insideblockme {\n        position: absolute;\n        top: 300px;\n        left: 50%;\n        height: 500px;\n        transform: translate(-50%, -50%);\n        z-index: 1000;\n    }\n</style>");
+  }
 });
-
-

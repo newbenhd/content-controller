@@ -54,7 +54,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
       chrome.browserAction.setBadgeBackgroundColor({"color": "#00008b"});
     }
 
-    window.localStorage.setItem('gg', 'yeah?');
     const user = window.localStorage.getItem('loggedIn');
 
     if(user) { // logged in? then, save it
