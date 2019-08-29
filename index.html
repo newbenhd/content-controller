@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <style>
+        body {
+            width: 400px;
+            height: 400px;
+            /*background-color: rgba(15, 49, 129, 0.2);*/
+        }
+        #header {
+            display: flex;
+            align-items: center;
+            padding: 2px 5px;
+            margin: 5px;
+        }
+        #logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+        #loginForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            /*background: lightgray;*/
+            margin-bottom: 5px;
+        }
+        input:focus {
+            outline: none;
+        }
+        #loggedIn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #logout {
+            padding: 10px;
+            margin: 5px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        #logout:focus {
+            outline: none;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        }
+        #logoutPassword {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid black;
+            border-radius: 0px;
+            margin-right: 10px;
+            outline: none;
+        }
+
+        #linkBox {
+            width: 80%;
+            height: 300px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+        .list {
+            padding: 5px;
+        }
+        .danger {
+            background-color: #FF0000;
+        }
+        .warning {
+            background-color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <img id="logo" src="assets/logo.png" alt="Chrome Extension Logo" class="logo-icon" />
+    <div>
+        <h3 class="logo">Content Controller <span class="version">(1.0.0) testing </span></h3>
+    </div>
+</div>
+<!--<form id="signUpForm">-->
+<!--    <input class="input" type="email" name="email" placeholder="Email" required>-->
+<!--    <input class="input" type="text" name="username" placeholder="Username" required />-->
+<!--    <input class="input" type="password" name="password" placeholder="Password" required />-->
+<!--    <input class="submit" type="submit" placeholder="Sign up" />-->
+<!--</form>-->
+
+<script src="js/index.js"></script>
+</body>
+</html>
