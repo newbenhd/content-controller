@@ -8,7 +8,7 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["js/jquery-3.4.1.min.js", "j2.17.0_0s/content.js"]
+      "js": ["js/jquery-3.4.1.min.js", "js/content.js"]
     }
   ],
   "background": {
